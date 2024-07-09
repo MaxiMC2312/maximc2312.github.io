@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Willkommen auf meiner Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#services">Dienste</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Dies ist die Startseite meiner Website.</p>
+            <button onclick="changeText()">Klick mich!</button>
+            <p id="dynamic-text">Dies ist ein dynamischer Text.</p>
+        </section>
+        <section id="about">
+            <h2>Über uns</h2>
+            <p>Hier erfahren Sie mehr über uns.</p>
+        </section>
+        <section id="services">
+            <h2>Dienste</h2>
+            <p>Hier sind unsere Dienste aufgeführt.</p>
+        </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Kontaktieren Sie uns über dieses Formular:</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Absenden</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meine Website. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
