@@ -8,7 +8,7 @@ function loadPage(page) {
             }
         })
         .catch(error => {
-            document.getElementById('content').innerHTML = '<h1>Seite nicht gefunden</h1><p>Die angeforderte Seite wurde nicht gefunden.</p>';
+            document.getElementById('content').innerHTML = '<h1>Page Not Found</h1><p>The requested page was not found.</p>';
         });
 }
 
@@ -22,7 +22,7 @@ function initializeContactForm() {
             email: formData.get('email'),
             message: formData.get('message')
         };
-        // Hier könnten Sie eine Anfrage an einen Server senden, z.B. mit fetch:
+        // Here you would send the data to a server, e.g., with fetch:
         // fetch('https://example.com/api/contact', {
         //     method: 'POST',
         //     headers: {
@@ -32,10 +32,10 @@ function initializeContactForm() {
         // }).then(response => response.json())
         //   .then(result => console.log(result));
         
-        // Temporäre Bestätigung für Demonstrationszwecke
-        alert('Nachricht gesendet! Name: ' + data.name + ', Email: ' + data.email + ', Nachricht: ' + data.message);
+        // Temporary confirmation for demonstration purposes
+        alert('Message sent! Name: ' + data.name + ', Email: ' + data.email + ', Message: ' + data.message);
     });
 }
 
-// Standardmäßig die Startseite laden
+// Load the home page by default
 window.onload = () => loadPage('home');
