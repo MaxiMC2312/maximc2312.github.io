@@ -60,14 +60,14 @@ form input, form textarea {
 }
 
 form input[type="submit"] {
-    background-color: red;
+    background-color: blue;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 form input[type="submit"]:hover {
-    background-color: darkred;
+    background-color: darkblue;
 }
 
 /* Dark mode */
@@ -78,7 +78,7 @@ form input[type="submit"]:hover {
     }
 
     header {
-        background-color: darkred;
+        background-color: darkblue;
     }
 
     nav ul li a {
@@ -86,11 +86,11 @@ form input[type="submit"]:hover {
     }
 
     form input[type="submit"] {
-        background-color: darkred;
+        background-color: darkblue;
         color: white;
     }
 
     form input[type="submit"]:hover {
-        background-color: crimson;
+        background-color: navy;
     }
 }
