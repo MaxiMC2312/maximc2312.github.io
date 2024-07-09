@@ -4,8 +4,14 @@ body {
     padding: 0;
 }
 
+/* Light mode */
+body {
+    background-color: white;
+    color: black;
+}
+
 header {
-    background-color: #FF4500;
+    background-color: #4CAF50;
     padding: 10px 0;
 }
 
@@ -62,4 +68,29 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: white;
+    }
+
+    header {
+        background-color: #333;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    form input[type="submit"] {
+        background-color: #333;
+        color: white;
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #555;
+    }
 }
