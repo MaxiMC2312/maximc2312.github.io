@@ -42,34 +42,6 @@ main {
     text-align: center;
 }
 
-form {
-    display: inline-block;
-    text-align: left;
-}
-
-form label {
-    display: block;
-    margin-top: 10px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    box-sizing: border-box;
-}
-
-form input[type="submit"] {
-    background-color: blue;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-    background-color: darkblue;
-}
-
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     body {
@@ -83,14 +55,5 @@ form input[type="submit"]:hover {
 
     nav ul li a {
         color: white;
-    }
-
-    form input[type="submit"] {
-        background-color: darkblue;
-        color: white;
-    }
-
-    form input[type="submit"]:hover {
-        background-color: navy;
     }
 }
